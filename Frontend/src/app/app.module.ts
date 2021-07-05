@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 import { HousingService } from './services/housing.service';
 import { AppComponent } from './app.component';
@@ -22,7 +23,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     PropertyDetailComponent,
     PageNotFoundComponent,
   ],
-  imports: [BrowserModule, HttpClientModule, AppRoutingModule],
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
   providers: [HousingService],
   bootstrap: [AppComponent],
 })

@@ -17,13 +17,9 @@ export class PropertyListComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    let SellRent: number;
-    switch (this.route.snapshot.url.toString()) {
-      case 'rent-property':
-        SellRent = 2;
-        break;
-      case 'list':
-        SellRent = 1;
+    let SellRent = 1;
+    if (this.route.snapshot.url.toString() === 'rent-property') {
+      SellRent = 2;
     }
     this.housingService.GetAllProperties(SellRent).subscribe(
       (data) => (this.Properties = data),

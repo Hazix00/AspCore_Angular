@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'list', component: PropertyListComponent },
   { path: 'rent-property', component: PropertyListComponent },
   { path: 'property-detail/:id', component: PropertyDetailComponent },
+  { path: 'add-property', component: AddPropertyComponent },
   { path: '', redirectTo: 'list', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
