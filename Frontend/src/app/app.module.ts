@@ -10,6 +10,7 @@ import { PropertyListComponent } from './property/property-list/property-list.co
 import { PropertyCardComponent } from './property/property-card/property-card.component';
 import { AddPropertyComponent } from './property/add-property/add-property.component';
 import { PropertyDetailComponent } from './property/property-detail/property-detail.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { PropertyDetailComponent } from './property/property-detail/property-det
     PropertyCardComponent,
     AddPropertyComponent,
     PropertyDetailComponent,
+    PageNotFoundComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [HousingService],

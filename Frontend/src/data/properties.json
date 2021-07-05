@@ -1,36 +1,49 @@
 ﻿[
     {
       "Id": 1,
+      "SellRent": 1,
       "Type": "House",
-      "Price": 12000
+      "Price": 12000,
+      "Image":"prop-1"
     },
     {
       "Id": 2,
+      "SellRent": 2,
       "Type": "House",
-      "Price": 10000
+      "Price": 10000,
+      "Image":"prop-2"
     },
     {
       "Id": 3,
+      "SellRent": 1,
       "Type": "House",
-      "Price": 14100
+      "Price": 14100,
+      "Image":"prop-3"
     },
     {
       "Id": 4,
+      "SellRent": 2,
       "Type": "House",
-      "Price": 20000
+      "Price": 20000,
+      "Image":"prop-4"
     },
     {
       "Id": 5,
+      "SellRent": 1,
       "Type": "House",
-      "Price": 44000
+      "Price": 44000,
+      "Image":"prop-5"
     },
     {
       "Id": 6,
+      "SellRent": 1,
       "Type": "House",
-      "Price": 9000
+      "Price": 9000,
+      "Image":"prop-6"
     },
     {
       "Id": 7,
+      "SellRent": 2,
       "Type": "House",
       "Price": 13650
     }

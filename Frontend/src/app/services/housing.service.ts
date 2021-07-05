@@ -10,12 +10,12 @@ import { IProperty } from '../property/iproperty.interface';
 export class HousingService {
   constructor(private http: HttpClient) {}
 
-  GetAllProperties(): Observable<IProperty[]> {
+  GetAllProperties(SellRent: number): Observable<IProperty[]> {
     return this.http.get('data/properties.json').pipe(
       map((data) => {
         const propertiesArray: Array<IProperty> = [];
         for (const id in data) {
-          if (data.hasOwnProperty(id)) {
+          if (data.hasOwnProperty(id) && data[id].SellRent === SellRent) {
             propertiesArray.push(data[id]);
           }
         }

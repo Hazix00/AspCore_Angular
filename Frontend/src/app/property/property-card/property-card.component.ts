@@ -8,7 +8,12 @@ import { IProperty } from '../iproperty.interface';
 })
 export class PropertyCardComponent implements OnInit {
   @Input() property: IProperty;
+
+  imgSrc: string;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.imgSrc =
+      'assets/img/' + (this.property.Image ?? 'House_iStock') + '.jpg';
+  }
 }
