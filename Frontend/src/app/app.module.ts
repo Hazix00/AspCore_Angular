@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HousingService } from './services/housing.service';
 import { AppComponent } from './app.component';
@@ -12,6 +12,8 @@ import { PropertyCardComponent } from './property/property-card/property-card.co
 import { AddPropertyComponent } from './property/add-property/add-property.component';
 import { PropertyDetailComponent } from './property/property-detail/property-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { UserLoginComponent } from './user/user-login/user-login.component';
+import { UserRegisterComponent } from './user/user-register/user-register.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +24,16 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AddPropertyComponent,
     PropertyDetailComponent,
     PageNotFoundComponent,
+    UserLoginComponent,
+    UserRegisterComponent,
   ],
-  imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [HousingService],
   bootstrap: [AppComponent],
 })

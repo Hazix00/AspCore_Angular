@@ -1,0 +1,12 @@
+﻿.ng-touched.ng-invalid {
+  border-color: red;
+}
+
+label span,
+.error-block {
+  color: red;
+}
+
+.error-block {
+  font-size: 0.8em;
+}
