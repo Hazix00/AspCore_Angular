@@ -1,1 +1,48 @@
-<p>user-login works!</p>
+<div class="row">
+  <div class="col-6 m-auto">
+    <div class="card m-auto">
+      <div class="card-header">Login</div>
+      <div class="card-body">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="form-group col-12">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" class="form-control" formControlName="email" />
+            <span
+              class="error-block"
+              *ngIf="email.invalid && (email.touched || email.dirty)"
+            >
+              <span *ngIf="email.errors.required">Please provide an Email</span>
+              <span *ngIf="email.errors.email">Invalid Email</span>
+            </span>
+          </div>
+
+          <div class="form-group col-12">
+            <label for="passwrod" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              formControlName="password"
+            />
+            <span
+              class="error-block"
+              *ngIf="password.invalid && (password.touched || password.dirty)"
+            >
+              Please provide a Password
+            </span>
+          </div>
+
+          <div class="form-group col-12">
+            <button
+              [disabled]="loginForm.invalid"
+              type="submit"
+              class="btn btn-primary"
+            >
+              Save
+            </button>
+            <button type="reset" class="btn btn-secondary ml-2">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

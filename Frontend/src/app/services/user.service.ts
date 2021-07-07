@@ -18,4 +18,15 @@ export class UserService {
     }
     localStorage.setItem('Users', JSON.stringify(users));
   }
+
+  findUser(email: string, password: string): User {
+    let user: User;
+    if (localStorage.getItem('Users')) {
+      const users = JSON.parse(localStorage.getItem('Users'));
+      user = users.find(
+        (u: User) => u.email === email && u.password === password
+      );
+    }
+    return user;
+  }
 }

@@ -5,8 +5,10 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
+
 import { User } from 'src/app/models/user.model';
 import { UserService } from 'src/app/services/user.service';
+import { AlertifyService } from 'src/app/services/alertify.service';
 
 @Component({
   selector: 'app-user-register',
@@ -17,7 +19,11 @@ export class UserRegisterComponent implements OnInit {
   registrationForm: FormGroup;
   user: User;
 
-  constructor(private fb: FormBuilder, private userService: UserService) {}
+  constructor(
+    private fb: FormBuilder,
+    private userService: UserService,
+    private alertifyService: AlertifyService
+  ) {}
 
   ngOnInit(): void {
     // this.registrationForm = new FormGroup(
@@ -84,5 +90,6 @@ export class UserRegisterComponent implements OnInit {
     } as User;
     this.userService.addUser(this.user);
     this.registrationForm.reset();
+    this.alertifyService.success('You are successfully registerd!!');
   }
 }
