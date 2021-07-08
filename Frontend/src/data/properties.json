@@ -1,6 +1,7 @@
 ﻿[
     {
       "Id": 1,
+      "Name": "Some Name 1",
       "SellRent": 1,
       "Type": "House",
       "Price": 12000,
@@ -8,6 +9,7 @@
     },
     {
       "Id": 2,
+      "Name": "Some Name 2",
       "SellRent": 2,
       "Type": "House",
       "Price": 10000,
@@ -15,6 +17,7 @@
     },
     {
       "Id": 3,
+      "Name": "Some Name 3",
       "SellRent": 1,
       "Type": "House",
       "Price": 14100,
@@ -22,6 +25,7 @@
     },
     {
       "Id": 4,
+      "Name": "Some Name 4",
       "SellRent": 2,
       "Type": "House",
       "Price": 20000,
@@ -29,6 +33,7 @@
     },
     {
       "Id": 5,
+      "Name": "Some Name 5",
       "SellRent": 1,
       "Type": "House",
       "Price": 44000,
@@ -36,6 +41,7 @@
     },
     {
       "Id": 6,
+      "Name": "Some Name 6",
       "SellRent": 1,
       "Type": "House",
       "Price": 9000,
@@ -43,6 +49,7 @@
     },
     {
       "Id": 7,
+      "Name": "Some Name 7",
       "SellRent": 2,
       "Type": "House",
       "Price": 13650

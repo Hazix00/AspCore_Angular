@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxBootstrapImportsModule } from './ngx-bootstrap-imports.module';
 
 import { HousingService } from './services/housing.service';
 import { AppComponent } from './app.component';
@@ -36,7 +36,7 @@ import { UserRegisterComponent } from './user/user-register/user-register.compon
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    BsDropdownModule.forRoot(),
+    NgxBootstrapImportsModule,
   ],
   providers: [HousingService],
   bootstrap: [AppComponent],

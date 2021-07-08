@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card-img-wrapper">
     <img [src]="imgSrc" class="card-img-top rounded" alt="House Image" />
-    <ul class="list-inline text-center member-icons animate">
+    <ul *ngIf="displayOptions" class="list-inline text-center member-icons animate">
       <li class="list-inline-item">
         <button
           class="btn btn-primary"
@@ -18,7 +18,7 @@
     </ul>
   </div>
   <div class="card-body pt-2">
-    <h4>{{ property.Id }}</h4>
+    <strong style="font-size: 28px; text-decoration: underline;">{{ property.Name }}</strong>
     <h4>{{ property.Type }}</h4>
     <h4>{{ property.Price }}</h4>
   </div>

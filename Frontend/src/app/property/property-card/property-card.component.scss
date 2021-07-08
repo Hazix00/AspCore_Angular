@@ -1,19 +1,25 @@
-.card-img-wrapper {
-  overflow: hidden;
-  position: relative;
-}
+.card {
+  min-height: 400px;
+  &-img-wrapper {
+    overflow: hidden;
+    position: relative;
+    &:hover .member-icons {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+  img {
+    transform: scale(1, 1);
+    transition: transform 500ms ease-out;
+    height: 250px;
+    &:hover {
+      z-index: 1;
+      transform: scale(1.2, 1.2);
+      transition: transform 500ms ease-out;
+      height: 250px;
+    }
+  }
 
-.card img:hover {
-  z-index: 1;
-  transform: scale(1.2, 1.2);
-  transition: transform 500ms ease-out;
-  height: 250px;
-}
-
-.card img {
-  transform: scale(1, 1);
-  transition: transform 500ms ease-out;
-  height: 250px;
 }
 
 .member-icons {
@@ -24,11 +30,6 @@
   margin-left: auto;
   margin-right: auto;
   opacity: 0;
-}
-
-.card-img-wrapper:hover .member-icons {
-  bottom: 0;
-  opacity: 1;
 }
 
 .animate {

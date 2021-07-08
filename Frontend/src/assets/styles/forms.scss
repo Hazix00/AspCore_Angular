@@ -10,3 +10,19 @@ label span,
 .error-block {
   font-size: 0.8em;
 }
+
+.btn-group > label[ng-reflect-btn-radio] {
+  border-radius: 44px;
+  padding: 0 15px;
+  line-height: 30px;
+}
+
+.card-header {
+  height: 42px;
+  padding: 0 15px !important;
+  background-color: #007bff !important;
+  > h1,h2,h3 {
+    color: white;
+    margin: 0;
+  }
+}

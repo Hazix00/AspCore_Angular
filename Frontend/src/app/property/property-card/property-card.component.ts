@@ -8,6 +8,7 @@ import { IProperty } from '../iproperty.interface';
 })
 export class PropertyCardComponent implements OnInit {
   @Input() property: IProperty;
+  @Input() displayOptions = true;
 
   imgSrc: string;
   constructor() {}
