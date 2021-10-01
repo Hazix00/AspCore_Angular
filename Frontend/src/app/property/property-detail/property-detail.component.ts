@@ -1,7 +1,7 @@
 import { HousingService } from './../../services/housing.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { IProperty } from '../iproperty.interface';
+import { IPropertyBase } from 'src/app/models/ipropertybase';
 
 @Component({
   selector: 'app-property-detail',
@@ -9,7 +9,7 @@ import { IProperty } from '../iproperty.interface';
   styleUrls: ['./property-detail.component.scss'],
 })
 export class PropertyDetailComponent implements OnInit {
-  Property: IProperty;
+  Property: IPropertyBase;
   imgSrc: string;
   constructor(
     private route: ActivatedRoute,

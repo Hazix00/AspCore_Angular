@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IProperty } from '../iproperty.interface';
+import { IPropertyBase } from 'src/app/models/ipropertybase';
 
 @Component({
   selector: 'app-property-card',
@@ -7,7 +7,7 @@ import { IProperty } from '../iproperty.interface';
   styleUrls: ['./property-card.component.scss'],
 })
 export class PropertyCardComponent implements OnInit {
-  @Input() property: IProperty;
+  @Input() property: IPropertyBase;
   @Input() displayOptions = true;
 
   imgSrc: string;
