@@ -19,7 +19,7 @@ export class PropertyDetailComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
       if (params.id) {
-        this.housingService.GetAllProperties().subscribe(
+        this.housingService.getAllProperties().subscribe(
           (data) => {
             this.Property = data.find((prop) => prop.Id == params.id);
             this.imgSrc =

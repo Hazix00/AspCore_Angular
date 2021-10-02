@@ -19,7 +19,17 @@
       height: 250px;
     }
   }
+  &-body {
+    h1 {
+      font-family: fantasy;
+      color: #0069d9;
+    }
+  }
+}
 
+.font-highlight {
+  font-style: italic;
+  color: red;
 }
 
 .member-icons {
